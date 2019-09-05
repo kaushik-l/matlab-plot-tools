@@ -50,15 +50,15 @@ for t=1:length(x)
 if ~isempty(ux)
     %x errorbars
         line([x(t)-lx(t) x(t)+ux(t)],[y(t) y(t)],'color',errorcol)
-    line([x(t)-lx(t) x(t)-lx(t)],[y(t)-yw y(t)+yw],'color',errorcol)    
-        line([x(t)+ux(t) x(t)+ux(t)],[y(t)-yw y(t)+yw],'color',errorcol)    
+%     line([x(t)-lx(t) x(t)-lx(t)],[y(t)-yw y(t)+yw],'color',errorcol)    
+%         line([x(t)+ux(t) x(t)+ux(t)],[y(t)-yw y(t)+yw],'color',errorcol)    
     end
     
     if ~isempty(uy)
     %y errorbars
     line([x(t) x(t)],[y(t)-ly(t) y(t)+uy(t)],'color',errorcol)
-    line([x(t)-xw x(t)+xw],[y(t)-ly(t) y(t)-ly(t)],'color',errorcol)    
-        line([x(t)-xw x(t)+xw],[y(t)+uy(t) y(t)+uy(t)],'color',errorcol) 
+%     line([x(t)-xw x(t)+xw],[y(t)-ly(t) y(t)-ly(t)],'color',errorcol)    
+%         line([x(t)-xw x(t)+xw],[y(t)+uy(t) y(t)+uy(t)],'color',errorcol) 
     end    
 end
     
